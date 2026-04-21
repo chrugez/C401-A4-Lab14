@@ -17,4 +17,4 @@
 
 3. **Problem Solving**:
 > Vấn đề: Khi chạy Async với số lượng lớn case, hệ thống dễ bị lỗi Rate Limit của OpenAI API.
-> Giải pháp: tôi đã phối hợp với member làm Delta Analysis để cấu hình BATCH_SIZE hợp lý trong file `main.py` và sử dụng cơ chế xử lý lỗi try-except để đảm bảo benchmark không bị dừng giữa chừng, đồng thời vẫn xuất được báo cáo phần dở dang.
+> Giải pháp: tôi đã phối hợp với member làm Multi-Judge Consensus Engine để cấu hình BATCH_SIZE hợp lý trong file `main.py` và sử dụng cơ chế xử lý lỗi try-except để đảm bảo benchmark không bị dừng giữa chừng, đồng thời vẫn xuất được báo cáo phần dở dang.

@@ -4,9 +4,8 @@
 - **Tổng số cases:** 60
 - **Tỉ lệ Pass/Fail:** 60/0 (Pass Rate: 100%)
 - **Điểm RAGAS trung bình:**
-    > Faithfulness: 1.0 (Trong log của bạn, tất cả các case đều ghi grounded=True, nghĩa là Agent không hề nói sai ý tài liệu).
-
-    > Relevancy: 0.98 (Một số case điểm 4.8 là do Judge nhận thấy câu trả lời hơi lệch về độ chi tiết so với câu hỏi)
+    > Faithfulness: 1.0 
+    > Relevancy: 0.98
 - **Điểm LLM-Judge trung bình:** 4.93 / 5.0
 - **Độ đồng thuận (Agreement Rate)**: 98.67%
 

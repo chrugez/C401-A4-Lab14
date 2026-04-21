@@ -1,0 +1,4504 @@
+[
+  {
+    "case_id": "golden_case_001",
+    "test_case": "A large problem in the study of early Buddhism is the relationship of dhyana and what else?",
+    "agent_response": "insight",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_02929"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_02929",
+        "distractor_f2592fac"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 87,
+            "completion_tokens": 20,
+            "tokens_used": 107
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 87,
+            "completion_tokens": 20,
+            "tokens_used": 107
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 174,
+        "completion_tokens": 40,
+        "tokens_used": 214
+      }
+    },
+    "latency": 0.05742149999423418,
+    "usage": {
+      "prompt_tokens": 234,
+      "completion_tokens": 70,
+      "tokens_used": 304
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_002",
+    "test_case": "In what year did a Spanish expedition visit New York Harbor?",
+    "agent_response": "1525",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_12136"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_12136",
+        "distractor_68a1181b"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 108,
+            "completion_tokens": 20,
+            "tokens_used": 128
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 108,
+            "completion_tokens": 20,
+            "tokens_used": 128
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 216,
+        "completion_tokens": 40,
+        "tokens_used": 256
+      }
+    },
+    "latency": 0.05758300000161398,
+    "usage": {
+      "prompt_tokens": 276,
+      "completion_tokens": 70,
+      "tokens_used": 346
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_003",
+    "test_case": "What company had released music from American Idol in addition to Sony Music Entertainment?",
+    "agent_response": "BMG",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00859"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00859",
+        "distractor_c602c346"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 121,
+            "completion_tokens": 20,
+            "tokens_used": 141
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 121,
+            "completion_tokens": 20,
+            "tokens_used": 141
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 242,
+        "completion_tokens": 40,
+        "tokens_used": 282
+      }
+    },
+    "latency": 0.05763140000635758,
+    "usage": {
+      "prompt_tokens": 306,
+      "completion_tokens": 70,
+      "tokens_used": 376
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_004",
+    "test_case": "What country experienced conflict with the Jewish community after World War II?",
+    "agent_response": "Britain",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_09056"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_09056",
+        "distractor_7bb9422c"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 162,
+            "completion_tokens": 20,
+            "tokens_used": 182
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 162,
+            "completion_tokens": 20,
+            "tokens_used": 182
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 40,
+        "tokens_used": 364
+      }
+    },
+    "latency": 0.057691599999088794,
+    "usage": {
+      "prompt_tokens": 399,
+      "completion_tokens": 70,
+      "tokens_used": 469
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_005",
+    "test_case": "How long is the amount of railway lines that are electrified?",
+    "agent_response": "1,430 km (889 mi)",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_13763"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_13763",
+        "distractor_b46a856f"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 123,
+            "completion_tokens": 22,
+            "tokens_used": 145
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 123,
+            "completion_tokens": 22,
+            "tokens_used": 145
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 246,
+        "completion_tokens": 44,
+        "tokens_used": 290
+      }
+    },
+    "latency": 0.05773250000493135,
+    "usage": {
+      "prompt_tokens": 306,
+      "completion_tokens": 74,
+      "tokens_used": 380
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_006",
+    "test_case": "How many members of the National Assembly were from Egypt?",
+    "agent_response": "400",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_06669"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_06669",
+        "distractor_23a57c0d"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 141,
+            "completion_tokens": 20,
+            "tokens_used": 161
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 141,
+            "completion_tokens": 20,
+            "tokens_used": 161
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 282,
+        "completion_tokens": 40,
+        "tokens_used": 322
+      }
+    },
+    "latency": 0.0625970000110101,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 70,
+      "tokens_used": 416
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_007",
+    "test_case": "From where did most non-citizen residents come?",
+    "agent_response": "Eastern European countries",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_07251"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_07251",
+        "distractor_db0b2765"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 125,
+            "completion_tokens": 21,
+            "tokens_used": 146
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 125,
+            "completion_tokens": 21,
+            "tokens_used": 146
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 42,
+        "tokens_used": 292
+      }
+    },
+    "latency": 0.06276790000265464,
+    "usage": {
+      "prompt_tokens": 310,
+      "completion_tokens": 72,
+      "tokens_used": 382
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_008",
+    "test_case": "How many people died because of the bombs dropped on Southampton?",
+    "agent_response": "630",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_16216"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_16216",
+        "distractor_22ca96d2"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 42,
+            "completion_tokens": 20,
+            "tokens_used": 62
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 42,
+            "completion_tokens": 20,
+            "tokens_used": 62
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 84,
+        "completion_tokens": 40,
+        "tokens_used": 124
+      }
+    },
+    "latency": 0.06285699999716599,
+    "usage": {
+      "prompt_tokens": 144,
+      "completion_tokens": 70,
+      "tokens_used": 214
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_009",
+    "test_case": "Hellenism contrasts with what other similar concept of era?",
+    "agent_response": "Hebraism",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_07714"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_07714",
+        "distractor_633dfcc6"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 128,
+            "completion_tokens": 20,
+            "tokens_used": 148
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 128,
+            "completion_tokens": 20,
+            "tokens_used": 148
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 256,
+        "completion_tokens": 40,
+        "tokens_used": 296
+      }
+    },
+    "latency": 0.0629213000065647,
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 70,
+      "tokens_used": 386
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_010",
+    "test_case": "How many people lived per square kilometer in the city limits?",
+    "agent_response": "21,616",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_13082"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_13082",
+        "distractor_ecf030fa"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 96,
+            "completion_tokens": 20,
+            "tokens_used": 116
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 96,
+            "completion_tokens": 20,
+            "tokens_used": 116
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 192,
+        "completion_tokens": 40,
+        "tokens_used": 232
+      }
+    },
+    "latency": 0.06299039999430533,
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 70,
+      "tokens_used": 322
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_011",
+    "test_case": "Between what two rivers did Lothair receive a kingdom?",
+    "agent_response": "the Rhine and Rhone",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_10962"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_10962",
+        "distractor_a30bd64e"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 149,
+            "completion_tokens": 22,
+            "tokens_used": 171
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 149,
+            "completion_tokens": 22,
+            "tokens_used": 171
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 298,
+        "completion_tokens": 44,
+        "tokens_used": 342
+      }
+    },
+    "latency": 0.061475299997255206,
+    "usage": {
+      "prompt_tokens": 363,
+      "completion_tokens": 74,
+      "tokens_used": 437
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_012",
+    "test_case": "Political factions in Britain supported what view of Britains in WWII?",
+    "agent_response": "aggressive British patriotism successfully defending democracy.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_17017"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_17017",
+        "distractor_082f14d8"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 191,
+            "completion_tokens": 23,
+            "tokens_used": 214
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 191,
+            "completion_tokens": 23,
+            "tokens_used": 214
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 382,
+        "completion_tokens": 46,
+        "tokens_used": 428
+      }
+    },
+    "latency": 0.06166000000666827,
+    "usage": {
+      "prompt_tokens": 463,
+      "completion_tokens": 76,
+      "tokens_used": 539
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_013",
+    "test_case": "At what Augusta hole was the Eisenhower Pine located?",
+    "agent_response": "17th",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_05192"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_05192",
+        "distractor_2c43f753"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 95,
+            "completion_tokens": 20,
+            "tokens_used": 115
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 95,
+            "completion_tokens": 20,
+            "tokens_used": 115
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 190,
+        "completion_tokens": 40,
+        "tokens_used": 230
+      }
+    },
+    "latency": 0.06175799999618903,
+    "usage": {
+      "prompt_tokens": 250,
+      "completion_tokens": 70,
+      "tokens_used": 320
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_014",
+    "test_case": "How many barrels did Lofting promise his beer pump would deliver hourly?",
+    "agent_response": "20 to 30",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_14224"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_14224",
+        "distractor_833f971b"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 143,
+            "completion_tokens": 21,
+            "tokens_used": 164
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 143,
+            "completion_tokens": 21,
+            "tokens_used": 164
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 286,
+        "completion_tokens": 42,
+        "tokens_used": 328
+      }
+    },
+    "latency": 0.061836399996536784,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 72,
+      "tokens_used": 425
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_015",
+    "test_case": "The existence of the Confederation of the Rhine brought about the end of which imperial power?",
+    "agent_response": "the Holy Roman Empire",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_11761"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_11761",
+        "distractor_a5e1b4f0"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 125,
+            "completion_tokens": 22,
+            "tokens_used": 147
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 125,
+            "completion_tokens": 22,
+            "tokens_used": 147
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 44,
+        "tokens_used": 294
+      }
+    },
+    "latency": 0.061908000003313646,
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 74,
+      "tokens_used": 390
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_016",
+    "test_case": "What is Abyssinia?",
+    "agent_response": "one of the only free African nations at that time",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_11122"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_11122",
+        "distractor_ee842425"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 156,
+            "completion_tokens": 25,
+            "tokens_used": 181
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 156,
+            "completion_tokens": 25,
+            "tokens_used": 181
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 312,
+        "completion_tokens": 50,
+        "tokens_used": 362
+      }
+    },
+    "latency": 0.06011720000242349,
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 80,
+      "tokens_used": 452
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_017",
+    "test_case": "How old was the mummified man discovered at the Austrian-Italian bored?",
+    "agent_response": "5,000 years old",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00745"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00745",
+        "distractor_ca57bac1"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 128,
+            "completion_tokens": 21,
+            "tokens_used": 149
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 128,
+            "completion_tokens": 21,
+            "tokens_used": 149
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 256,
+        "completion_tokens": 42,
+        "tokens_used": 298
+      }
+    },
+    "latency": 0.06033170000591781,
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 72,
+      "tokens_used": 388
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_018",
+    "test_case": "What is El Colegio Nacional modeled after?",
+    "agent_response": "College of France",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_10830"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_10830",
+        "distractor_e32d3a60"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 92,
+            "completion_tokens": 21,
+            "tokens_used": 113
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 92,
+            "completion_tokens": 21,
+            "tokens_used": 113
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 184,
+        "completion_tokens": 42,
+        "tokens_used": 226
+      }
+    },
+    "latency": 0.06050900000263937,
+    "usage": {
+      "prompt_tokens": 244,
+      "completion_tokens": 72,
+      "tokens_used": 316
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_019",
+    "test_case": "What actress claimed she also carried on an affair with Schwarzenegger while he was with Shriver?",
+    "agent_response": "Brigitte Nielsen",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_01572"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_01572",
+        "distractor_581b5d46"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 111,
+            "completion_tokens": 21,
+            "tokens_used": 132
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 111,
+            "completion_tokens": 21,
+            "tokens_used": 132
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 222,
+        "completion_tokens": 42,
+        "tokens_used": 264
+      }
+    },
+    "latency": 0.060652600004686974,
+    "usage": {
+      "prompt_tokens": 284,
+      "completion_tokens": 72,
+      "tokens_used": 356
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_020",
+    "test_case": "How widespread was the success of CD-4 format?",
+    "agent_response": "even less successful than the two matrixed formats",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_07122"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_07122",
+        "distractor_897ec51c"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 113,
+            "completion_tokens": 24,
+            "tokens_used": 137
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 113,
+            "completion_tokens": 24,
+            "tokens_used": 137
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 226,
+        "completion_tokens": 48,
+        "tokens_used": 274
+      }
+    },
+    "latency": 0.06073950001155026,
+    "usage": {
+      "prompt_tokens": 286,
+      "completion_tokens": 78,
+      "tokens_used": 364
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_021",
+    "test_case": "Did natural history in particular become increasingly popular amoung the upper or lower classes?",
+    "agent_response": "upper",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00412"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00412",
+        "distractor_5c6b9572"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 145,
+            "completion_tokens": 20,
+            "tokens_used": 165
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 145,
+            "completion_tokens": 20,
+            "tokens_used": 165
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 290,
+        "completion_tokens": 40,
+        "tokens_used": 330
+      }
+    },
+    "latency": 0.05936230000224896,
+    "usage": {
+      "prompt_tokens": 362,
+      "completion_tokens": 70,
+      "tokens_used": 432
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_022",
+    "test_case": "A modern commentator, William Atwood, feels Poles not only sought solace in Chopin's music but also found them a source of strength as they continued to fight for what?",
+    "agent_response": "freedom",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_06537"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_06537",
+        "distractor_b61bf78f"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 119,
+            "completion_tokens": 20,
+            "tokens_used": 139
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 119,
+            "completion_tokens": 20,
+            "tokens_used": 139
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 238,
+        "completion_tokens": 40,
+        "tokens_used": 278
+      }
+    },
+    "latency": 0.05946340000082273,
+    "usage": {
+      "prompt_tokens": 323,
+      "completion_tokens": 70,
+      "tokens_used": 393
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_023",
+    "test_case": "What was Oklahoma cities gross metropolitan product in 2009?",
+    "agent_response": "$61.1 billion",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_12653"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_12653",
+        "distractor_71b32672"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 53,
+            "completion_tokens": 21,
+            "tokens_used": 74
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 53,
+            "completion_tokens": 21,
+            "tokens_used": 74
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 106,
+        "completion_tokens": 42,
+        "tokens_used": 148
+      }
+    },
+    "latency": 0.0595307000039611,
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 72,
+      "tokens_used": 238
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_024",
+    "test_case": "Around how many ships were sent into service from Greek cities?",
+    "agent_response": "as many as a thousand ships",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_15035"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_15035",
+        "distractor_df664a9d"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 102,
+            "completion_tokens": 23,
+            "tokens_used": 125
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 102,
+            "completion_tokens": 23,
+            "tokens_used": 125
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 204,
+        "completion_tokens": 46,
+        "tokens_used": 250
+      }
+    },
+    "latency": 0.05960469999990892,
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 76,
+      "tokens_used": 340
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_025",
+    "test_case": "What captain visited the island in 1775 on their trip around the world?",
+    "agent_response": "James Cook",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_15345"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_15345",
+        "distractor_a2529507"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 107,
+            "completion_tokens": 21,
+            "tokens_used": 128
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 107,
+            "completion_tokens": 21,
+            "tokens_used": 128
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 214,
+        "completion_tokens": 42,
+        "tokens_used": 256
+      }
+    },
+    "latency": 0.05964180000592023,
+    "usage": {
+      "prompt_tokens": 274,
+      "completion_tokens": 72,
+      "tokens_used": 346
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_026",
+    "test_case": "What percentage of Plymouth consists of non-religious people?",
+    "agent_response": "32.9%",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_13461"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_13461",
+        "distractor_aab60913"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 92,
+            "completion_tokens": 20,
+            "tokens_used": 112
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 92,
+            "completion_tokens": 20,
+            "tokens_used": 112
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 184,
+        "completion_tokens": 40,
+        "tokens_used": 224
+      }
+    },
+    "latency": 0.062450299999909475,
+    "usage": {
+      "prompt_tokens": 244,
+      "completion_tokens": 70,
+      "tokens_used": 314
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_027",
+    "test_case": "How many estates were there in Qing society?",
+    "agent_response": "five",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_14340"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_14340",
+        "distractor_b7d7df40"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 173,
+            "completion_tokens": 20,
+            "tokens_used": 193
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 173,
+            "completion_tokens": 20,
+            "tokens_used": 193
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 346,
+        "completion_tokens": 40,
+        "tokens_used": 386
+      }
+    },
+    "latency": 0.06264379998901859,
+    "usage": {
+      "prompt_tokens": 419,
+      "completion_tokens": 70,
+      "tokens_used": 489
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_028",
+    "test_case": "How were the Vestals' devotion to Rome's security viewed to be ?",
+    "agent_response": "essential",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_14782"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_14782",
+        "distractor_7d2c926f"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 120,
+            "completion_tokens": 20,
+            "tokens_used": 140
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 120,
+            "completion_tokens": 20,
+            "tokens_used": 140
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 240,
+        "completion_tokens": 40,
+        "tokens_used": 280
+      }
+    },
+    "latency": 0.06271199999901,
+    "usage": {
+      "prompt_tokens": 300,
+      "completion_tokens": 70,
+      "tokens_used": 370
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_029",
+    "test_case": "All devices that can process information can qualify being called what?",
+    "agent_response": "a computer",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_04066"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_04066",
+        "distractor_54161df1"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 97,
+            "completion_tokens": 21,
+            "tokens_used": 118
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 97,
+            "completion_tokens": 21,
+            "tokens_used": 118
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 194,
+        "completion_tokens": 42,
+        "tokens_used": 236
+      }
+    },
+    "latency": 0.06276090000756085,
+    "usage": {
+      "prompt_tokens": 254,
+      "completion_tokens": 72,
+      "tokens_used": 326
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_030",
+    "test_case": "What is the economy of Boston?",
+    "agent_response": "$363 billion",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_02553"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_02553",
+        "distractor_e813fee2"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 45,
+            "completion_tokens": 21,
+            "tokens_used": 66
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 45,
+            "completion_tokens": 21,
+            "tokens_used": 66
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 90,
+        "completion_tokens": 42,
+        "tokens_used": 132
+      }
+    },
+    "latency": 0.06279949999589007,
+    "usage": {
+      "prompt_tokens": 150,
+      "completion_tokens": 72,
+      "tokens_used": 222
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_031",
+    "test_case": "At which school did Myron Orfield teach?",
+    "agent_response": "University of Minnesota",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_04751"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_04751",
+        "distractor_1e06f72d"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 136,
+            "completion_tokens": 21,
+            "tokens_used": 157
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 136,
+            "completion_tokens": 21,
+            "tokens_used": 157
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 272,
+        "completion_tokens": 42,
+        "tokens_used": 314
+      }
+    },
+    "latency": 0.06144059999496676,
+    "usage": {
+      "prompt_tokens": 332,
+      "completion_tokens": 72,
+      "tokens_used": 404
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_032",
+    "test_case": "What does CRA stand for?",
+    "agent_response": "Community Reinvestment Act",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_06255"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_06255",
+        "distractor_1fbb5659"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 213,
+            "completion_tokens": 21,
+            "tokens_used": 234
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 213,
+            "completion_tokens": 21,
+            "tokens_used": 234
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 426,
+        "completion_tokens": 42,
+        "tokens_used": 468
+      }
+    },
+    "latency": 0.06162779999431223,
+    "usage": {
+      "prompt_tokens": 507,
+      "completion_tokens": 72,
+      "tokens_used": 579
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_033",
+    "test_case": "808s & Heartbreak was released by what company?",
+    "agent_response": "Island Def Jam",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_09495"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_09495",
+        "distractor_34f70c11"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 142,
+            "completion_tokens": 21,
+            "tokens_used": 163
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 142,
+            "completion_tokens": 21,
+            "tokens_used": 163
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 284,
+        "completion_tokens": 42,
+        "tokens_used": 326
+      }
+    },
+    "latency": 0.061785999991116114,
+    "usage": {
+      "prompt_tokens": 345,
+      "completion_tokens": 72,
+      "tokens_used": 417
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_034",
+    "test_case": "Does the time frame of adolescence vary from culture to culture or remain universally agreed upon?",
+    "agent_response": "varies drastically by culture",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00233"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00233",
+        "distractor_9d7ed988"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 107,
+            "completion_tokens": 22,
+            "tokens_used": 129
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 107,
+            "completion_tokens": 22,
+            "tokens_used": 129
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 214,
+        "completion_tokens": 44,
+        "tokens_used": 258
+      }
+    },
+    "latency": 0.0619357000105083,
+    "usage": {
+      "prompt_tokens": 274,
+      "completion_tokens": 74,
+      "tokens_used": 348
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_035",
+    "test_case": "Hoe similar is Catalan to Portuguese?",
+    "agent_response": "85%",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_03369"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_03369",
+        "distractor_d2582a61"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 40,
+            "completion_tokens": 20,
+            "tokens_used": 60
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 40,
+            "completion_tokens": 20,
+            "tokens_used": 60
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 80,
+        "completion_tokens": 40,
+        "tokens_used": 120
+      }
+    },
+    "latency": 0.0620350000099279,
+    "usage": {
+      "prompt_tokens": 140,
+      "completion_tokens": 70,
+      "tokens_used": 210
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_036",
+    "test_case": "How many prisoners of war were executed in the sack of Delhi?",
+    "agent_response": "100,000",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_07931"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_07931",
+        "distractor_e206de5c"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 124,
+            "completion_tokens": 20,
+            "tokens_used": 144
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 124,
+            "completion_tokens": 20,
+            "tokens_used": 144
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 248,
+        "completion_tokens": 40,
+        "tokens_used": 288
+      }
+    },
+    "latency": 0.06096160000015516,
+    "usage": {
+      "prompt_tokens": 309,
+      "completion_tokens": 70,
+      "tokens_used": 379
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_037",
+    "test_case": "What earthquake happened in southern Sichuan?",
+    "agent_response": "Panzhihua earthquake",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00001"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00001",
+        "distractor_29123cc4"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 40,
+            "completion_tokens": 21,
+            "tokens_used": 61
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 40,
+            "completion_tokens": 21,
+            "tokens_used": 61
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 80,
+        "completion_tokens": 42,
+        "tokens_used": 122
+      }
+    },
+    "latency": 0.06118900000001304,
+    "usage": {
+      "prompt_tokens": 140,
+      "completion_tokens": 72,
+      "tokens_used": 212
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_038",
+    "test_case": "What two-letter abbreviation is used for undergraduate engineering courses?",
+    "agent_response": "BE",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_08856"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_08856",
+        "distractor_42591c2b"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 51,
+            "completion_tokens": 20,
+            "tokens_used": 71
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 51,
+            "completion_tokens": 20,
+            "tokens_used": 71
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 40,
+        "tokens_used": 142
+      }
+    },
+    "latency": 0.06134060000476893,
+    "usage": {
+      "prompt_tokens": 162,
+      "completion_tokens": 70,
+      "tokens_used": 232
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_039",
+    "test_case": "How many international universities operate in London?",
+    "agent_response": "three",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_10184"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_10184",
+        "distractor_ebb3bda3"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 122,
+            "completion_tokens": 20,
+            "tokens_used": 142
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 122,
+            "completion_tokens": 20,
+            "tokens_used": 142
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 244,
+        "completion_tokens": 40,
+        "tokens_used": 284
+      }
+    },
+    "latency": 0.061487899991334416,
+    "usage": {
+      "prompt_tokens": 304,
+      "completion_tokens": 70,
+      "tokens_used": 374
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_040",
+    "test_case": "How many of Switzerland's mountains are at least 4000 meters above sea level?",
+    "agent_response": "48",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_16740"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_16740",
+        "distractor_175da1d3"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 139,
+            "completion_tokens": 20,
+            "tokens_used": 159
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 139,
+            "completion_tokens": 20,
+            "tokens_used": 159
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 278,
+        "completion_tokens": 40,
+        "tokens_used": 318
+      }
+    },
+    "latency": 0.06163430000015069,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 70,
+      "tokens_used": 416
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_041",
+    "test_case": "Mối quan hệ giữa dhyana và insight trong Phật giáo sớm là gì?",
+    "agent_response": "Một vấn đề cốt lõi trong nghiên cứu Phật giáo sớm là mối quan hệ giữa dhyana và insight.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_02929"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_02929",
+        "distractor_90ea1971"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 102,
+            "completion_tokens": 29,
+            "tokens_used": 131
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 102,
+            "completion_tokens": 29,
+            "tokens_used": 131
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 204,
+        "completion_tokens": 58,
+        "tokens_used": 262
+      }
+    },
+    "latency": 0.060265100008109584,
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 89,
+      "tokens_used": 353
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_042",
+    "test_case": "Ai là người đã nói câu nói nổi tiếng về Bodhicitta?",
+    "agent_response": "Câu nói nổi tiếng về Bodhicitta được nói bởi học giả- thánh nhân Phật giáo Ấn Độ thế kỷ 8, Shantideva.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_02930"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_02930",
+        "distractor_2830b6f2"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 89,
+            "completion_tokens": 30,
+            "tokens_used": 119
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 89,
+            "completion_tokens": 30,
+            "tokens_used": 119
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 178,
+        "completion_tokens": 60,
+        "tokens_used": 238
+      }
+    },
+    "latency": 0.060678900001221336,
+    "usage": {
+      "prompt_tokens": 238,
+      "completion_tokens": 94,
+      "tokens_used": 332
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_043",
+    "test_case": "Câu nói của Shantideva được 14th Dalai Lama trích dẫn có ý nghĩa gì?",
+    "agent_response": "Câu nói của Shantideva thể hiện ý định của Bodhisattva là dispel the misery of the world.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_02930"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_02930",
+        "distractor_38cbc0bd"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 88,
+            "completion_tokens": 28,
+            "tokens_used": 116
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 88,
+            "completion_tokens": 28,
+            "tokens_used": 116
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 56,
+        "tokens_used": 232
+      }
+    },
+    "latency": 0.06088109999836888,
+    "usage": {
+      "prompt_tokens": 236,
+      "completion_tokens": 86,
+      "tokens_used": 322
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_044",
+    "test_case": "Có phải bốn chân lý cao quý là một phần của 'liberating insight' trong Phật giáo sớm không?",
+    "agent_response": "Có, nhưng việc đề cập đến bốn chân lý cao quý như là 'liberating insight' là một bổ sung sau này.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_02929"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_02929",
+        "distractor_75d46bbc"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 109,
+            "completion_tokens": 30,
+            "tokens_used": 139
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 109,
+            "completion_tokens": 30,
+            "tokens_used": 139
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 218,
+        "completion_tokens": 60,
+        "tokens_used": 278
+      }
+    },
+    "latency": 0.06102890000329353,
+    "usage": {
+      "prompt_tokens": 278,
+      "completion_tokens": 94,
+      "tokens_used": 372
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_045",
+    "test_case": "Tại sao mối quan hệ giữa dhyana và insight lại quan trọng trong nghiên cứu Phật giáo?",
+    "agent_response": "Mối quan hệ này quan trọng vì nó giúp hiểu rõ hơn về sự phát triển của các khái niệm trong văn bản Phật giáo.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_02929",
+        "squad_chunk_02930"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_02929",
+        "squad_chunk_02930",
+        "distractor_4770e328"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 169,
+            "completion_tokens": 32,
+            "tokens_used": 201
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 169,
+            "completion_tokens": 32,
+            "tokens_used": 201
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 338,
+        "completion_tokens": 64,
+        "tokens_used": 402
+      }
+    },
+    "latency": 0.061168000000179745,
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 104,
+      "tokens_used": 518
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_046",
+    "test_case": "Ai là người đã dẫn đầu cuộc thám hiểm đến New York vào năm 1525?",
+    "agent_response": "Captain Estêvão Gomes.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_12136"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_12136",
+        "distractor_57598939"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 115,
+            "completion_tokens": 21,
+            "tokens_used": 136
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 115,
+            "completion_tokens": 21,
+            "tokens_used": 136
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 230,
+        "completion_tokens": 42,
+        "tokens_used": 272
+      }
+    },
+    "latency": 0.05958910001209006,
+    "usage": {
+      "prompt_tokens": 291,
+      "completion_tokens": 72,
+      "tokens_used": 363
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_047",
+    "test_case": "Tại sao Estêvão Gomes không thể tiếp tục khám phá sau khi đến New York?",
+    "agent_response": "Heavy ice kept him from further exploration.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_12136"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_12136",
+        "distractor_f54939cb"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 119,
+            "completion_tokens": 23,
+            "tokens_used": 142
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 119,
+            "completion_tokens": 23,
+            "tokens_used": 142
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 238,
+        "completion_tokens": 46,
+        "tokens_used": 284
+      }
+    },
+    "latency": 0.05982400001084898,
+    "usage": {
+      "prompt_tokens": 299,
+      "completion_tokens": 76,
+      "tokens_used": 375
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_048",
+    "test_case": "New Amsterdam được thành lập vào năm nào?",
+    "agent_response": "1624.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_12137"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_12137",
+        "distractor_c8f859bd"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 132,
+            "completion_tokens": 20,
+            "tokens_used": 152
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 132,
+            "completion_tokens": 20,
+            "tokens_used": 152
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 264,
+        "completion_tokens": 40,
+        "tokens_used": 304
+      }
+    },
+    "latency": 0.06001519999699667,
+    "usage": {
+      "prompt_tokens": 324,
+      "completion_tokens": 70,
+      "tokens_used": 394
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_049",
+    "test_case": "Manhattan được mua từ ai và với giá bao nhiêu?",
+    "agent_response": "Manhattan được mua từ Canarsie với giá 60 guilders.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_12137"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_12137",
+        "distractor_abf8324a"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 142,
+            "completion_tokens": 24,
+            "tokens_used": 166
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 142,
+            "completion_tokens": 24,
+            "tokens_used": 166
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 284,
+        "completion_tokens": 48,
+        "tokens_used": 332
+      }
+    },
+    "latency": 0.06015710000065155,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 78,
+      "tokens_used": 424
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_050",
+    "test_case": "Nếu Estêvão Gomes đã không gặp băng, ông ấy có thể đã khám phá thêm khu vực nào?",
+    "agent_response": "Câu hỏi này không thể trả lời được từ thông tin có sẵn.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_12136"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_12136",
+        "distractor_1368868c"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.8,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 128,
+            "completion_tokens": 26,
+            "tokens_used": 154
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 128,
+            "completion_tokens": 26,
+            "tokens_used": 154
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 256,
+        "completion_tokens": 52,
+        "tokens_used": 308
+      }
+    },
+    "latency": 0.060297399992123246,
+    "usage": {
+      "prompt_tokens": 323,
+      "completion_tokens": 82,
+      "tokens_used": 405
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_051",
+    "test_case": "Ai là người chiến thắng mùa giải American Idol mà Kree Harrison là người về nhì?",
+    "agent_response": "Candice Glover",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00860"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00860",
+        "distractor_ba4711be"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 86,
+            "completion_tokens": 21,
+            "tokens_used": 107
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 86,
+            "completion_tokens": 21,
+            "tokens_used": 107
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 172,
+        "completion_tokens": 42,
+        "tokens_used": 214
+      }
+    },
+    "latency": 0.057956700009526685,
+    "usage": {
+      "prompt_tokens": 232,
+      "completion_tokens": 72,
+      "tokens_used": 304
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_052",
+    "test_case": "Ai là người đầu tiên giành chiến thắng American Idol sau Jordin Sparks?",
+    "agent_response": "Candice Glover",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00860"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00860",
+        "distractor_bb3db559"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 4.8
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 83,
+            "completion_tokens": 21,
+            "tokens_used": 104
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 83,
+            "completion_tokens": 21,
+            "tokens_used": 104
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 166,
+        "completion_tokens": 42,
+        "tokens_used": 208
+      }
+    },
+    "latency": 0.05827220001083333,
+    "usage": {
+      "prompt_tokens": 226,
+      "completion_tokens": 72,
+      "tokens_used": 298
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_053",
+    "test_case": "Tại sao Candice Glover lại không bán được nhiều album đầu tay?",
+    "agent_response": "Câu hỏi không có thông tin trong văn bản.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00860"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00860",
+        "distractor_2d8dd94a"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 89,
+            "completion_tokens": 24,
+            "tokens_used": 113
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 89,
+            "completion_tokens": 24,
+            "tokens_used": 113
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 178,
+        "completion_tokens": 48,
+        "tokens_used": 226
+      }
+    },
+    "latency": 0.05841359999612905,
+    "usage": {
+      "prompt_tokens": 238,
+      "completion_tokens": 78,
+      "tokens_used": 316
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_054",
+    "test_case": "Ai đã thay thế Sony Music làm nhãn hiệu âm nhạc cho American Idol vào năm 2010?",
+    "agent_response": "UMG's Interscope-Geffen-A&M Records",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00859"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00859",
+        "distractor_4e45376d"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 127,
+            "completion_tokens": 21,
+            "tokens_used": 148
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=True. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 127,
+            "completion_tokens": 21,
+            "tokens_used": 148
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 254,
+        "completion_tokens": 42,
+        "tokens_used": 296
+      }
+    },
+    "latency": 0.058533899995381944,
+    "usage": {
+      "prompt_tokens": 323,
+      "completion_tokens": 72,
+      "tokens_used": 395
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_055",
+    "test_case": "Hãy cho biết quá trình hợp tác giữa BMG và Sony Music Entertainment trong việc phân phối âm nhạc cho American Idol.",
+    "agent_response": "BMG đã hợp tác với Sony Music Entertainment từ 2005-2007 để thành lập một liên doanh gọi là Sony BMG Music Entertainment.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_00859"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_00859",
+        "distractor_7d9e28bb"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 151,
+            "completion_tokens": 31,
+            "tokens_used": 182
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 151,
+            "completion_tokens": 31,
+            "tokens_used": 182
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 302,
+        "completion_tokens": 62,
+        "tokens_used": 364
+      }
+    },
+    "latency": 0.058654699998442084,
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 98,
+      "tokens_used": 478
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_056",
+    "test_case": "Cuộc xung đột giữa cộng đồng Do Thái và người Ả Rập về điều gì sau Thế chiến II?",
+    "agent_response": "Giới hạn nhập cư của người Do Thái.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_09056"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_09056",
+        "distractor_7005329d"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 177,
+            "completion_tokens": 24,
+            "tokens_used": 201
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 177,
+            "completion_tokens": 24,
+            "tokens_used": 201
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 354,
+        "completion_tokens": 48,
+        "tokens_used": 402
+      }
+    },
+    "latency": 0.05987119999190327,
+    "usage": {
+      "prompt_tokens": 442,
+      "completion_tokens": 78,
+      "tokens_used": 520
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_057",
+    "test_case": "Ai đã tham gia vào cuộc đấu tranh vũ trang chống lại sự cai trị của Anh?",
+    "agent_response": "Haganah, Irgun và Lehi.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_09056"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_09056",
+        "distractor_99c4fccc"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 171,
+            "completion_tokens": 22,
+            "tokens_used": 193
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 171,
+            "completion_tokens": 22,
+            "tokens_used": 193
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 342,
+        "completion_tokens": 44,
+        "tokens_used": 386
+      }
+    },
+    "latency": 0.06011729998863302,
+    "usage": {
+      "prompt_tokens": 426,
+      "completion_tokens": 74,
+      "tokens_used": 500
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_058",
+    "test_case": "Tại sao cuộc nổi dậy thứ hai lại bắt đầu?",
+    "agent_response": "Do sự sụp đổ của các cuộc đàm phán hòa bình.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_09057"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_09057",
+        "distractor_9eefc60e"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 4.9,
+      "agreement_rate": 0.95,
+      "individual_scores": {
+        "judge_openai_primary": 4.8,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 4.8,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 137,
+            "completion_tokens": 25,
+            "tokens_used": 162
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 137,
+            "completion_tokens": 25,
+            "tokens_used": 162
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 274,
+        "completion_tokens": 50,
+        "tokens_used": 324
+      }
+    },
+    "latency": 0.06030230000033043,
+    "usage": {
+      "prompt_tokens": 334,
+      "completion_tokens": 80,
+      "tokens_used": 414
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_059",
+    "test_case": "Trong thời gian Ariel Sharon làm thủ tướng, ông đã thực hiện kế hoạch gì?",
+    "agent_response": "Rút lui đơn phương khỏi Dải Gaza.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_09057"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_09057",
+        "distractor_978b2667"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 138,
+            "completion_tokens": 23,
+            "tokens_used": 161
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 138,
+            "completion_tokens": 23,
+            "tokens_used": 161
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 276,
+        "completion_tokens": 46,
+        "tokens_used": 322
+      }
+    },
+    "latency": 0.060429999997722916,
+    "usage": {
+      "prompt_tokens": 344,
+      "completion_tokens": 76,
+      "tokens_used": 420
+    },
+    "status": "pass"
+  },
+  {
+    "case_id": "golden_case_060",
+    "test_case": "Nếu một người hỏi rằng liệu Yasser Arafat đã lên kế hoạch cho cuộc nổi dậy thứ hai trước khi nó xảy ra hay không, câu trả lời sẽ là gì?",
+    "agent_response": "Câu hỏi này không thể trả lời chính xác từ các đoạn văn đã cho.",
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "expected_ids": [
+        "squad_chunk_09057"
+      ],
+      "retrieved_ids": [
+        "squad_chunk_09057",
+        "distractor_d482dc0e"
+      ],
+      "top_k": 3
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "judge_openai_primary": 5.0,
+        "judge_openai_secondary": 5.0
+      },
+      "individual_rationales": {
+        "judge_openai_primary": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+        "judge_openai_secondary": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback."
+      },
+      "conflict_detected": false,
+      "conflict_reason": "",
+      "consensus_method": "weighted_average",
+      "reasoning": "Judges stayed within the disagreement threshold, so the weighted average was accepted.",
+      "judges": [
+        {
+          "name": "judge_openai_primary",
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_primary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 162,
+            "completion_tokens": 27,
+            "tokens_used": 189
+          }
+        },
+        {
+          "name": "judge_openai_secondary",
+          "provider": "openai",
+          "model": "gpt-4o",
+          "weight": 1.0,
+          "score": 5.0,
+          "reasoning": "judge_openai_secondary judged the answer on accuracy/grounding. exact_match=True, contains_ground_truth=True, grounded=False. OpenAI API key not found, using deterministic fallback.",
+          "fallback_used": true,
+          "usage": {
+            "prompt_tokens": 162,
+            "completion_tokens": 27,
+            "tokens_used": 189
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 54,
+        "tokens_used": 378
+      }
+    },
+    "latency": 0.06055329999071546,
+    "usage": {
+      "prompt_tokens": 421,
+      "completion_tokens": 84,
+      "tokens_used": 505
+    },
+    "status": "pass"
+  }
+]

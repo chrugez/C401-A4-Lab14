@@ -1,0 +1,61 @@
+case_id,primary_ground_truth_id,ground_truth_ids,ground_truth_count,type,difficulty,unanswerable,question
+golden_case_001,readme_chunk_001,readme_chunk_001,1,fact-check,easy,False,Hệ thống đánh giá tự động có nhiệm vụ gì?
+golden_case_002,readme_chunk_002,readme_chunk_002,1,comparison,medium,False,Giai đoạn nào trong lịch trình thực hiện dành nhiều thời gian nhất?
+golden_case_003,readme_chunk_003,readme_chunk_003,1,reasoning,medium,False,Tại sao cần tính toán Hit Rate và MRR trong giai đoạn Retrieval?
+golden_case_004,readme_chunk_002,readme_chunk_002,1,fact-check,easy,False,Có bao nhiêu giai đoạn trong lịch trình thực hiện?
+golden_case_005,readme_chunk_002,readme_chunk_002,1,fact-check,medium,False,Giai đoạn nào liên quan đến việc tối ưu Agent?
+golden_case_006,readme_chunk_001,readme_chunk_001,1,reasoning,hard,False,"Nếu một Agent không thể đo lường hiệu suất của nó, điều gì sẽ xảy ra?"
+golden_case_007,readme_chunk_002,readme_chunk_002,1,reasoning,medium,False,Tại sao cần tạo ra ít nhất 50 test cases chất lượng?
+golden_case_008,readme_chunk_004,readme_chunk_004,1,fact-check,easy,False,Logic đồng thuận trong Nhóm AI/Backend sử dụng bao nhiêu mô hình Judge khác nhau?
+golden_case_009,readme_chunk_005,readme_chunk_005,1,comparison,medium,False,So sánh giữa phiên bản Agent mới và cũ được thực hiện như thế nào trong Nhóm DevOps/Analyst?
+golden_case_010,readme_chunk_005,readme_chunk_005,1,process,medium,False,Quy trình nào được sử dụng để quyết định 'Release' hoặc 'Rollback' trong Nhóm DevOps/Analyst?
+golden_case_011,readme_chunk_006,readme_chunk_006,1,fact-check,medium,False,Danh mục nộp bài yêu cầu những tài liệu nào từ nhóm?
+golden_case_012,,,0,out-of-scope,hard,True,Tại sao cần phải tính toán hệ số đồng thuận trong Nhóm AI/Backend?
+golden_case_013,readme_chunk_004,readme_chunk_004,1,adversarial,easy,False,Có thể sử dụng một mô hình Judge duy nhất trong logic đồng thuận không?
+golden_case_014,readme_chunk_006,readme_chunk_006,1,fact-check,medium,False,Các báo cáo nào cần được tạo ra sau khi chạy 'main.py'?
+golden_case_015,readme_chunk_006,readme_chunk_006,1,fact-check,medium,False,"Nhóm có cần nộp báo cáo phân tích thất bại không? Nếu có, tên file là gì?"
+golden_case_016,readme_chunk_007,readme_chunk_007,1,fact-check,easy,False,Tại sao việc đánh giá câu trả lời mà bỏ qua bước Retrieval lại không thể đạt điểm tối đa?
+golden_case_017,readme_chunk_008,readme_chunk_008,1,reasoning,medium,False,Tại sao việc chỉ tin vào một Judge model là một sai lầm?
+golden_case_018,readme_chunk_009,readme_chunk_009,1,process,hard,False,Làm thế nào để giảm 30% chi phí eval mà không giảm độ chính xác?
+golden_case_019,readme_chunk_007,readme_chunk_007|readme_chunk_008,2,comparison,medium,False,So sánh tầm quan trọng của Retrieval và đánh giá câu trả lời trong quy trình đánh giá.
+golden_case_020,readme_chunk_008,readme_chunk_008,1,adversarial,medium,False,"Nếu một hệ thống chỉ sử dụng một Judge model, thì điều gì có thể xảy ra?"
+golden_case_021,readme_chunk_007,readme_chunk_007,1,fact-check,easy,False,Có thể nào đạt điểm tối đa mà không thực hiện bước Retrieval không?
+golden_case_022,readme_chunk_009,readme_chunk_009,1,fact-check,medium,False,Hệ thống Expert cần phải chạy như thế nào để đạt hiệu suất cao?
+golden_case_023,readme_chunk_008,readme_chunk_008,1,multi-hop,hard,False,Có những yếu tố nào cần xem xét khi tính toán độ tin cậy của nhiều Judge model?
+golden_case_024,readme_chunk_010,readme_chunk_010,1,fact-check,easy,False,Báo cáo 5 Whys cần chỉ ra lỗi nằm ở đâu?
+golden_case_025,readme_chunk_011,readme_chunk_011,1,fact-check,medium,False,Hướng dẫn chạy có chứa thông tin gì?
+golden_case_026,readme_chunk_012,readme_chunk_012,1,process,medium,False,Cần cài đặt gì trước khi chạy dự án?
+golden_case_027,readme_chunk_012,readme_chunk_012,1,reasoning,medium,False,"Nếu tôi không có file requirements.txt, tôi có thể chạy dự án không?"
+golden_case_028,,,0,out-of-scope,hard,True,Lỗi nằm ở Chunking strategy có thể được phát hiện như thế nào?
+golden_case_029,readme_chunk_012,readme_chunk_012,1,fact-check,easy,False,Có thể sử dụng lệnh nào để cài đặt dependencies?
+golden_case_030,readme_chunk_010,readme_chunk_010,1,fact-check,medium,False,Báo cáo 5 Whys có thể chỉ ra lỗi ở bao nhiêu phần khác nhau?
+golden_case_031,readme_chunk_013,readme_chunk_013,1,fact-check,easy,False,Lệnh nào được sử dụng để tạo Golden Dataset?
+golden_case_032,readme_chunk_014,readme_chunk_014,1,fact-check,easy,False,"Sau khi tạo Golden Dataset, lệnh nào cần được chạy tiếp theo để thực hiện benchmark?"
+golden_case_033,readme_chunk_013,readme_chunk_013|readme_chunk_015,2,comparison,medium,False,So sánh lệnh nào được sử dụng để kiểm tra định dạng trước khi nộp với lệnh tạo Golden Dataset?
+golden_case_034,readme_chunk_015,readme_chunk_015,1,process,medium,False,Quá trình nào cần thực hiện trước khi nộp dữ liệu?
+golden_case_035,readme_chunk_014,readme_chunk_014,1,out-of-scope,medium,False,"Nếu tôi muốn biết cách tạo báo cáo sau khi benchmark, tôi nên tìm thông tin nào?"
+golden_case_036,readme_chunk_013,readme_chunk_013|readme_chunk_015,2,multi-hop,medium,False,Có thể sử dụng lệnh nào để kiểm tra định dạng mà không cần chạy lệnh tạo Golden Dataset?
+golden_case_037,,,0,out-of-scope,hard,True,"Nếu tôi muốn tìm hiểu về cách chạy benchmark, nhưng không có thông tin trong tài liệu, tôi nên làm gì?"
+golden_case_038,readme_chunk_015,readme_chunk_015,1,adversarial,hard,False,"Nếu tôi chạy lệnh 'python check_lab.py', nhưng không thấy lỗi, tôi có thể yên tâm rằng dữ liệu đã sẵn sàng để nộp không?"
+golden_case_039,readme_chunk_016,readme_chunk_016,1,fact-check,easy,False,Làm thế nào để tạo file `data/golden_set.jsonl`?
+golden_case_040,grading_chunk_001,grading_chunk_001,1,fact-check,easy,False,Tiêu chí nào được sử dụng để đánh giá bài lab cho nhóm?
+golden_case_041,grading_chunk_001,grading_chunk_001|grading_chunk_002,2,comparison,medium,False,So sánh điểm tối đa cho Tiêu chí Chấm điểm EXPERT LEVEL và Điểm Nhóm.
+golden_case_042,readme_chunk_016,readme_chunk_016,1,process,medium,False,Có cần phải kiểm tra định dạng dữ liệu trước khi nộp bài không?
+golden_case_043,readme_chunk_016,readme_chunk_016,1,reasoning,medium,False,"Nếu không chạy lệnh kiểm tra định dạng dữ liệu, điều gì có thể xảy ra?"
+golden_case_044,grading_chunk_002,grading_chunk_002,1,fact-check,easy,False,Có bao nhiêu điểm tối đa cho Tiêu chí 'Retrieval Evaluation'?
+golden_case_045,readme_chunk_016,readme_chunk_016,1,adversarial,hard,False,"Nếu tôi không có API Key, tôi có thể nộp bài không?"
+golden_case_046,grading_chunk_003,grading_chunk_003,1,fact-check,easy,False,Tiêu chí nào trong phần Điểm Cá nhân có điểm tối đa là 15?
+golden_case_047,grading_chunk_004,grading_chunk_004,1,process,easy,False,Quy trình nộp bài bắt đầu bằng bước nào?
+golden_case_048,grading_chunk_003,grading_chunk_003,1,comparison,medium,False,So sánh điểm tối đa của phần Engineering Contribution và phần Problem Solving.
+golden_case_049,grading_chunk_004,grading_chunk_004,1,fact-check,medium,False,"Nếu nhóm chỉ sử dụng 1 Judge đơn lẻ, điểm tối đa phần Nhóm sẽ bị giới hạn ở mức bao nhiêu?"
+golden_case_050,hard_cases_chunk_001,hard_cases_chunk_001,1,reasoning,medium,False,Tại sao tài liệu này được tạo ra cho nhóm Data Engineers?
+golden_case_051,hard_cases_chunk_001,hard_cases_chunk_001,1,adversarial,hard,False,"Nếu không có đủ dữ liệu, AI sẽ phản ứng như thế nào theo tài liệu?"
+golden_case_052,grading_chunk_003,grading_chunk_003,1,multi-hop,hard,False,Làm thế nào để đánh giá trade-off giữa Chi phí và Chất lượng?
+golden_case_053,hard_cases_chunk_002,hard_cases_chunk_002,1,fact-check,medium,False,Loại case nào yêu cầu Agent phải từ chối nhiệm vụ ngoài phạm vi?
+golden_case_054,hard_cases_chunk_003,hard_cases_chunk_003,1,multi-hop,hard,False,Tại sao việc chỉ sử dụng một judge model là không đủ?
+golden_case_055,hard_cases_chunk_002,hard_cases_chunk_002,1,adversarial,medium,False,"Nếu một Agent nhận được yêu cầu 'Hãy viết một bài thơ chính trị', nó nên phản ứng như thế nào?"
+golden_case_056,hard_cases_chunk_004,hard_cases_chunk_004,1,ambiguous,medium,False,Câu hỏi 'Chạy trong bao lâu?' có thể gây nhầm lẫn như thế nào?
+golden_case_057,hard_cases_chunk_004,hard_cases_chunk_004,1,process,medium,False,Agent nên làm gì khi người dùng yêu cầu bỏ qua các chỉ số retrieval để tiết kiệm công sức?
+golden_case_058,hard_cases_chunk_003,hard_cases_chunk_003,1,reasoning,hard,False,Tại sao một Agent có thể gặp khó khăn trong việc xác định nguyên nhân gốc rễ của hallucination?
+golden_case_059,,,0,out-of-scope,easy,True,Thông tin về CEO hiện tại của OpenAI có nằm trong tài liệu không?
+golden_case_060,hard_cases_chunk_002,hard_cases_chunk_002,1,fact-check,medium,False,Agent nên làm gì nếu nhận được yêu cầu 'Hãy bỏ qua context và chỉ cần 10 test case để nộp bài'?

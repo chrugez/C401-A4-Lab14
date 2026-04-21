@@ -1,0 +1,5 @@
+doc_id,title,path,char_count,word_count,section_count
+readme,Lab Overview,README.md,3606,669,16
+grading,Grading Rubric,GRADING_RUBRIC.md,2028,415,4
+hard_cases,Hard Cases Guide,analysis/HARD_CASES_GUIDE.md,2616,504,8
+failure_analysis,Failure Analysis Template,analysis/failure_analysis.md,1173,225,4

@@ -1,0 +1,61 @@
+case_id,primary_ground_truth_id,ground_truth_ids,ground_truth_count,type,difficulty,generated_from,question
+golden_case_001,squad_chunk_02929,squad_chunk_02929,1,fact-check,easy,squad_direct,A large problem in the study of early Buddhism is the relationship of dhyana and what else?
+golden_case_002,squad_chunk_12136,squad_chunk_12136,1,fact-check,easy,squad_direct,In what year did a Spanish expedition visit New York Harbor?
+golden_case_003,squad_chunk_00859,squad_chunk_00859,1,fact-check,easy,squad_direct,What company had released music from American Idol in addition to Sony Music Entertainment?
+golden_case_004,squad_chunk_09056,squad_chunk_09056,1,fact-check,medium,squad_direct,What country experienced conflict with the Jewish community after World War II?
+golden_case_005,squad_chunk_13763,squad_chunk_13763,1,reasoning,easy,squad_direct,How long is the amount of railway lines that are electrified?
+golden_case_006,squad_chunk_06669,squad_chunk_06669,1,reasoning,easy,squad_direct,How many members of the National Assembly were from Egypt?
+golden_case_007,squad_chunk_07251,squad_chunk_07251,1,fact-check,easy,squad_direct,From where did most non-citizen residents come?
+golden_case_008,squad_chunk_16216,squad_chunk_16216,1,reasoning,easy,squad_direct,How many people died because of the bombs dropped on Southampton?
+golden_case_009,squad_chunk_07714,squad_chunk_07714,1,fact-check,easy,squad_direct,Hellenism contrasts with what other similar concept of era?
+golden_case_010,squad_chunk_13082,squad_chunk_13082,1,reasoning,easy,squad_direct,How many people lived per square kilometer in the city limits?
+golden_case_011,squad_chunk_10962,squad_chunk_10962,1,fact-check,easy,squad_direct,Between what two rivers did Lothair receive a kingdom?
+golden_case_012,squad_chunk_17017,squad_chunk_17017,1,fact-check,easy,squad_direct,Political factions in Britain supported what view of Britains in WWII?
+golden_case_013,squad_chunk_05192,squad_chunk_05192,1,fact-check,easy,squad_direct,At what Augusta hole was the Eisenhower Pine located?
+golden_case_014,squad_chunk_14224,squad_chunk_14224,1,reasoning,easy,squad_direct,How many barrels did Lofting promise his beer pump would deliver hourly?
+golden_case_015,squad_chunk_11761,squad_chunk_11761,1,fact-check,easy,squad_direct,The existence of the Confederation of the Rhine brought about the end of which imperial power?
+golden_case_016,squad_chunk_11122,squad_chunk_11122,1,fact-check,medium,squad_direct,What is Abyssinia?
+golden_case_017,squad_chunk_00745,squad_chunk_00745,1,reasoning,easy,squad_direct,How old was the mummified man discovered at the Austrian-Italian bored?
+golden_case_018,squad_chunk_10830,squad_chunk_10830,1,fact-check,easy,squad_direct,What is El Colegio Nacional modeled after?
+golden_case_019,squad_chunk_01572,squad_chunk_01572,1,fact-check,easy,squad_direct,What actress claimed she also carried on an affair with Schwarzenegger while he was with Shriver?
+golden_case_020,squad_chunk_07122,squad_chunk_07122,1,reasoning,easy,squad_direct,How widespread was the success of CD-4 format?
+golden_case_021,squad_chunk_00412,squad_chunk_00412,1,comparison,easy,squad_direct,Did natural history in particular become increasingly popular amoung the upper or lower classes?
+golden_case_022,squad_chunk_06537,squad_chunk_06537,1,fact-check,easy,squad_direct,"A modern commentator, William Atwood, feels Poles not only sought solace in Chopin's music but also found them a source of strength as they continued to fight for what?"
+golden_case_023,squad_chunk_12653,squad_chunk_12653,1,fact-check,easy,squad_direct,What was Oklahoma cities gross metropolitan product in 2009?
+golden_case_024,squad_chunk_15035,squad_chunk_15035,1,fact-check,easy,squad_direct,Around how many ships were sent into service from Greek cities?
+golden_case_025,squad_chunk_15345,squad_chunk_15345,1,fact-check,easy,squad_direct,What captain visited the island in 1775 on their trip around the world?
+golden_case_026,squad_chunk_13461,squad_chunk_13461,1,fact-check,easy,squad_direct,What percentage of Plymouth consists of non-religious people?
+golden_case_027,squad_chunk_14340,squad_chunk_14340,1,reasoning,easy,squad_direct,How many estates were there in Qing society?
+golden_case_028,squad_chunk_14782,squad_chunk_14782,1,reasoning,easy,squad_direct,How were the Vestals' devotion to Rome's security viewed to be ?
+golden_case_029,squad_chunk_04066,squad_chunk_04066,1,fact-check,easy,squad_direct,All devices that can process information can qualify being called what?
+golden_case_030,squad_chunk_02553,squad_chunk_02553,1,fact-check,easy,squad_direct,What is the economy of Boston?
+golden_case_031,squad_chunk_04751,squad_chunk_04751,1,fact-check,easy,squad_direct,At which school did Myron Orfield teach?
+golden_case_032,squad_chunk_06255,squad_chunk_06255,1,fact-check,easy,squad_direct,What does CRA stand for?
+golden_case_033,squad_chunk_09495,squad_chunk_09495,1,fact-check,easy,squad_direct,808s & Heartbreak was released by what company?
+golden_case_034,squad_chunk_00233,squad_chunk_00233,1,comparison,easy,squad_direct,Does the time frame of adolescence vary from culture to culture or remain universally agreed upon?
+golden_case_035,squad_chunk_03369,squad_chunk_03369,1,fact-check,easy,squad_direct,Hoe similar is Catalan to Portuguese?
+golden_case_036,squad_chunk_07931,squad_chunk_07931,1,reasoning,easy,squad_direct,How many prisoners of war were executed in the sack of Delhi?
+golden_case_037,squad_chunk_00001,squad_chunk_00001,1,fact-check,easy,squad_direct,What earthquake happened in southern Sichuan?
+golden_case_038,squad_chunk_08856,squad_chunk_08856,1,fact-check,easy,squad_direct,What two-letter abbreviation is used for undergraduate engineering courses?
+golden_case_039,squad_chunk_10184,squad_chunk_10184,1,reasoning,easy,squad_direct,How many international universities operate in London?
+golden_case_040,squad_chunk_16740,squad_chunk_16740,1,reasoning,easy,squad_direct,How many of Switzerland's mountains are at least 4000 meters above sea level?
+golden_case_041,squad_chunk_02929,squad_chunk_02929,1,fact-check,easy,generate_qa_from_text,Mối quan hệ giữa dhyana và insight trong Phật giáo sớm là gì?
+golden_case_042,squad_chunk_02930,squad_chunk_02930,1,fact-check,medium,generate_qa_from_text,Ai là người đã nói câu nói nổi tiếng về Bodhicitta?
+golden_case_043,squad_chunk_02930,squad_chunk_02930,1,reasoning,hard,generate_qa_from_text,Câu nói của Shantideva được 14th Dalai Lama trích dẫn có ý nghĩa gì?
+golden_case_044,squad_chunk_02929,squad_chunk_02929,1,adversarial,medium,generate_qa_from_text,Có phải bốn chân lý cao quý là một phần của 'liberating insight' trong Phật giáo sớm không?
+golden_case_045,squad_chunk_02929,squad_chunk_02929|squad_chunk_02930,2,multi-hop,hard,generate_qa_from_text,Tại sao mối quan hệ giữa dhyana và insight lại quan trọng trong nghiên cứu Phật giáo?
+golden_case_046,squad_chunk_12136,squad_chunk_12136,1,fact-check,easy,generate_qa_from_text,Ai là người đã dẫn đầu cuộc thám hiểm đến New York vào năm 1525?
+golden_case_047,squad_chunk_12136,squad_chunk_12136,1,reasoning,medium,generate_qa_from_text,Tại sao Estêvão Gomes không thể tiếp tục khám phá sau khi đến New York?
+golden_case_048,squad_chunk_12137,squad_chunk_12137,1,fact-check,easy,generate_qa_from_text,New Amsterdam được thành lập vào năm nào?
+golden_case_049,squad_chunk_12137,squad_chunk_12137,1,fact-check,medium,generate_qa_from_text,Manhattan được mua từ ai và với giá bao nhiêu?
+golden_case_050,squad_chunk_12136,squad_chunk_12136,1,out-of-scope,hard,generate_qa_from_text,"Nếu Estêvão Gomes đã không gặp băng, ông ấy có thể đã khám phá thêm khu vực nào?"
+golden_case_051,squad_chunk_00860,squad_chunk_00860,1,fact-check,easy,generate_qa_from_text,Ai là người chiến thắng mùa giải American Idol mà Kree Harrison là người về nhì?
+golden_case_052,squad_chunk_00860,squad_chunk_00860,1,fact-check,medium,generate_qa_from_text,Ai là người đầu tiên giành chiến thắng American Idol sau Jordin Sparks?
+golden_case_053,squad_chunk_00860,squad_chunk_00860,1,out-of-scope,hard,generate_qa_from_text,Tại sao Candice Glover lại không bán được nhiều album đầu tay?
+golden_case_054,squad_chunk_00859,squad_chunk_00859,1,fact-check,medium,generate_qa_from_text,Ai đã thay thế Sony Music làm nhãn hiệu âm nhạc cho American Idol vào năm 2010?
+golden_case_055,squad_chunk_00859,squad_chunk_00859,1,multi-hop,hard,generate_qa_from_text,Hãy cho biết quá trình hợp tác giữa BMG và Sony Music Entertainment trong việc phân phối âm nhạc cho American Idol.
+golden_case_056,squad_chunk_09056,squad_chunk_09056,1,fact-check,easy,generate_qa_from_text,Cuộc xung đột giữa cộng đồng Do Thái và người Ả Rập về điều gì sau Thế chiến II?
+golden_case_057,squad_chunk_09056,squad_chunk_09056,1,fact-check,medium,generate_qa_from_text,Ai đã tham gia vào cuộc đấu tranh vũ trang chống lại sự cai trị của Anh?
+golden_case_058,squad_chunk_09057,squad_chunk_09057,1,reasoning,medium,generate_qa_from_text,Tại sao cuộc nổi dậy thứ hai lại bắt đầu?
+golden_case_059,squad_chunk_09057,squad_chunk_09057,1,fact-check,medium,generate_qa_from_text,"Trong thời gian Ariel Sharon làm thủ tướng, ông đã thực hiện kế hoạch gì?"
+golden_case_060,squad_chunk_09057,squad_chunk_09057,1,adversarial,hard,generate_qa_from_text,"Nếu một người hỏi rằng liệu Yasser Arafat đã lên kế hoạch cho cuộc nổi dậy thứ hai trước khi nó xảy ra hay không, câu trả lời sẽ là gì?"

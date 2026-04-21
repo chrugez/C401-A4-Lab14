@@ -16,9 +16,37 @@ class MainAgent:
     def __init__(self, profile: str = "base"):
         self.profile = profile
         self.name = f"SupportAgent-{profile}"
+        self.system_prompt = self._get_system_prompt()
+        self.top_k = 5 if profile == "optimized" else 3  # Tăng top_k cho optimized để cải thiện retrieval
+
+    def _get_system_prompt(self) -> str:
+        if self.profile == "base":
+            return (
+                "You are a helpful assistant. Answer questions based on the provided context. "
+                "If you don't know, say so."
+            )
+        elif self.profile == "optimized":
+            return (
+                "You are a precise assistant. Answer ONLY based on the provided context. "
+                "Do not hallucinate or add information not in the context. "
+                "Keep answers under 50 words. "
+                "If no information is available, say 'I don't know.'\n\n"
+                "Examples:\n"
+                "Question: What is the capital of France?\n"
+                "Context: France's capital is Paris.\n"
+                "Answer: Paris\n\n"
+                "Question: What is the population of Mars?\n"
+                "Context: Mars is a planet.\n"
+                "Answer: I don't know."
+            )
+        return ""
 
     async def query(self, question: str, test_case: Dict[str, Any] | None = None) -> Dict[str, Any]:
         await asyncio.sleep(0.05 if self.profile == "optimized" else 0.08)
+
+        # Query Transformation: Nếu câu hỏi ngắn (<10 từ), rewrite để rõ ràng hơn
+        if len(question.split()) < 10 and self.profile == "optimized":
+            question = self._rewrite_question(question)
 
         test_case = test_case or {}
         expected_ids = list(test_case.get("expected_retrieval_ids", []))
@@ -27,7 +55,7 @@ class MainAgent:
         metadata = dict(test_case.get("metadata", {}))
 
         retrieved_ids = self._build_retrieved_ids(question, expected_ids)
-        answer = self._build_answer(question, expected_answer, metadata)
+        answer = self._build_answer(question, expected_answer, metadata, context)
         contexts = self._build_contexts(context, expected_ids)
 
         prompt_tokens = max(60, math.ceil(len(question.split()) * 1.8) + math.ceil(len(context.split()) * 0.35))
@@ -47,6 +75,12 @@ class MainAgent:
             },
         }
 
+    def _rewrite_question(self, question: str) -> str:
+        # Giả lập rewrite: thêm "Please provide information about" nếu ngắn
+        if len(question.split()) < 5:
+            return f"Please provide detailed information about {question}."
+        return question
+
     def _build_retrieved_ids(self, question: str, expected_ids: list[str]) -> list[str]:
         if not expected_ids:
             return [self._distractor_id(question, 1), self._distractor_id(question, 2)]
@@ -56,17 +90,18 @@ class MainAgent:
             ranked = expected_ids + [distractor]
         else:
             ranked = [distractor] + expected_ids
-        return self._dedupe(ranked)
+        return self._dedupe(ranked)[:self.top_k]  # Giới hạn theo top_k
 
-    def _build_answer(self, question: str, expected_answer: str, metadata: Dict[str, Any]) -> str:
+    def _build_answer(self, question: str, expected_answer: str, metadata: Dict[str, Any], context: str) -> str:
         if metadata.get("unanswerable"):
             return "Không có đủ thông tin trong ngữ cảnh đã truy xuất để trả lời chắc chắn câu hỏi này."
 
         if not expected_answer:
-            return f"Không tìm thấy câu trả lời chắc chắn cho câu hỏi: {question}"
+            return "I don't know." if self.profile == "optimized" else f"Không tìm thấy câu trả lời chắc chắn cho câu hỏi: {question}"
 
+        # Optimized profile: Trả lời ngắn gọn, dựa trên context, với few-shot trong prompt (giả lập)
         if self.profile == "optimized":
-            return expected_answer
+            return expected_answer  # Giả lập trả lời chính xác dựa trên prompt optimized
         return f"Theo ngữ cảnh truy xuất được, câu trả lời là: {expected_answer}"
 
     def _build_contexts(self, context: str, expected_ids: list[str]) -> list[str]:

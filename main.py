@@ -2,133 +2,159 @@ import asyncio
 import json
 import os
 import time
-from engine.runner import BenchmarkRunner
+from typing import Any, Dict, List, Tuple
+
 from agent.main_agent import MainAgent
+from engine.llm_judge import JudgeProfile, LLMJudge
+from engine.retrieval_eval import RetrievalEvaluator
+from engine.runner import BenchmarkRunner
 
-# Giả lập các components Expert
-class ExpertEvaluator:
-    async def score(self, case, resp): 
-        # Giả lập tính toán Hit Rate và MRR
-        return {
-            "faithfulness": 0.9, 
-            "relevancy": 0.8,
-            "retrieval": {"hit_rate": 1.0, "mrr": 0.5}
-        }
 
-class MultiModelJudge:
-    async def evaluate_multi_judge(self, q, a, gt): 
-        return {
-            "final_score": 4.5, 
-            "agreement_rate": 0.8,
-            "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
-        }
+DEFAULT_BATCH_SIZE = int(os.getenv("EVAL_BATCH_SIZE", "5"))
+DEFAULT_TOP_K = int(os.getenv("EVAL_TOP_K", "3"))
+DEFAULT_CONFLICT_THRESHOLD = float(os.getenv("JUDGE_CONFLICT_THRESHOLD", "1.5"))
+PRICE_PER_1K_TOKENS_USD = float(os.getenv("EVAL_PRICE_PER_1K_TOKENS", "0.01"))
 
-async def run_benchmark_with_results(agent_version: str):
-    print(f"🚀 Khởi động Benchmark cho {agent_version}...")
 
-    if not os.path.exists("data/golden_set.jsonl"):
-        print("❌ Thiếu data/golden_set.jsonl. Hãy chạy 'python data/synthetic_gen.py' trước.")
-        return None, None
+def load_dataset() -> List[Dict[str, Any]]:
+    dataset_path = "data/golden_set.jsonl"
+    if not os.path.exists(dataset_path):
+        raise FileNotFoundError("Missing data/golden_set.jsonl. Run 'python data/synthetic_gen.py' first.")
 
-    with open("data/golden_set.jsonl", "r", encoding="utf-8") as f:
-        dataset = [json.loads(line) for line in f if line.strip()]
+    with open(dataset_path, "r", encoding="utf-8") as dataset_file:
+        dataset = [json.loads(line) for line in dataset_file if line.strip()]
 
     if not dataset:
-        print("❌ File data/golden_set.jsonl rỗng. Hãy tạo ít nhất 1 test case.")
-        return None, None
+        raise ValueError("data/golden_set.jsonl is empty. Generate at least one test case.")
+    return dataset
 
-    runner = BenchmarkRunner(MainAgent(), ExpertEvaluator(), MultiModelJudge())
-    results = await runner.run_all(dataset)
 
-    total = len(results)
-    summary = {
-        "metadata": {"version": agent_version, "total": total, "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")},
-        "metrics": {
-            "avg_score": sum(r["judge"]["final_score"] for r in results) / total,
-            "hit_rate": sum(r["ragas"]["retrieval"]["hit_rate"] for r in results) / total,
-            "agreement_rate": sum(r["judge"]["agreement_rate"] for r in results) / total
-        }
-    }
-    return results, summary
+def build_judge() -> LLMJudge:
+    profiles = [
+        JudgeProfile(name="judge_openai_primary", provider="openai", model="gpt-4o-mini", weight=1.0),
+        JudgeProfile(name="judge_openai_secondary", provider="openai", model="gpt-4o", weight=1.0),
+    ]
+    return LLMJudge(
+        profiles=profiles,
+        conflict_threshold=DEFAULT_CONFLICT_THRESHOLD,
+        fallback_enabled=True,
+    )
 
-async def run_benchmark(version):
-    _, summary = await run_benchmark_with_results(version)
-    return summary
 
-def calculate_cost(total_cases, avg_tokens_per_case=1000):
-    # Giả sử giá trung bình là 0.01$ cho 1000 tokens (Input + Output)
-    price_per_1k_tokens = 0.01 
-    total_tokens = total_cases * avg_tokens_per_case
-    total_cost = (total_tokens / 1000) * price_per_1k_tokens
-    
+def calculate_cost(total_tokens: int) -> Dict[str, float]:
+    total_cost = (total_tokens / 1000) * PRICE_PER_1K_TOKENS_USD
     return {
         "total_tokens": total_tokens,
         "estimated_cost_usd": round(total_cost, 4),
-        "cost_per_case": round(total_cost / total_cases, 5) if total_cases > 0 else 0
+        "cost_per_case": 0.0,
     }
 
-async def main():
-    v1_summary = await run_benchmark("Agent_V1_Base")
-    
-    # Giả lập V2 có cải tiến (để test logic)
-    v2_results, v2_summary = await run_benchmark_with_results("Agent_V2_Optimized")
-    
-    if not v1_summary or not v2_summary:
-        print("❌ Không thể chạy Benchmark. Kiểm tra lại data/golden_set.jsonl.")
+
+def summarize_results(agent_version: str, results: List[Dict[str, Any]]) -> Dict[str, Any]:
+    total = len(results)
+    total_tokens = sum(int(result["usage"].get("tokens_used", 0)) for result in results)
+    cost_info = calculate_cost(total_tokens)
+    cost_info["cost_per_case"] = round(cost_info["estimated_cost_usd"] / total, 5) if total else 0.0
+
+    summary = {
+        "metadata": {
+            "version": agent_version,
+            "total": total,
+            "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+        },
+        "metrics": {
+            "avg_score": round(sum(result["judge"]["final_score"] for result in results) / total, 4),
+            "hit_rate": round(sum(result["retrieval"]["hit_rate"] for result in results) / total, 4),
+            "mrr": round(sum(result["retrieval"]["mrr"] for result in results) / total, 4),
+            "agreement_rate": round(sum(result["judge"]["agreement_rate"] for result in results) / total, 4),
+            "avg_latency": round(sum(result["latency"] for result in results) / total, 4),
+            "pass_rate": round(sum(1 for result in results if result["status"] == "pass") / total, 4),
+        },
+        "usage_statistics": cost_info,
+    }
+    return summary
+
+
+def apply_release_gate(v1_summary: Dict[str, Any], v2_summary: Dict[str, Any]) -> Dict[str, str]:
+    min_score_gain = 0.05
+    min_hit_rate = 0.8
+
+    avg_v1 = v1_summary["metrics"]["avg_score"]
+    avg_v2 = v2_summary["metrics"]["avg_score"]
+    hr_v2 = v2_summary["metrics"]["hit_rate"]
+    delta = avg_v2 - avg_v1
+
+    if delta >= min_score_gain and hr_v2 >= min_hit_rate:
+        decision = "RELEASE APPROVED"
+        reason = f"Score improved by {delta:.2f} and Hit Rate meets threshold ({hr_v2:.2%})."
+    elif hr_v2 < min_hit_rate:
+        decision = "BLOCK RELEASE"
+        reason = f"Retrieval issue: Hit Rate ({hr_v2:.2%}) is below the threshold."
+    else:
+        decision = "BLOCK RELEASE"
+        reason = f"Score gain ({delta:.2f}) is not significant or regressed."
+
+    return {"status": decision, "reason": reason}
+
+
+async def run_benchmark_with_results(agent_version: str, profile: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+    print(f"Starting benchmark for {agent_version}...")
+
+    dataset = load_dataset()
+    runner = BenchmarkRunner(
+        agent=MainAgent(profile=profile),
+        evaluator=RetrievalEvaluator(top_k=DEFAULT_TOP_K),
+        judge=build_judge(),
+        batch_size=DEFAULT_BATCH_SIZE,
+    )
+    results = await runner.run_all(dataset)
+    summary = summarize_results(agent_version, results)
+    return results, summary
+
+
+async def run_benchmark(agent_version: str, profile: str) -> Dict[str, Any]:
+    _, summary = await run_benchmark_with_results(agent_version, profile)
+    return summary
+
+
+def persist_reports(summary: Dict[str, Any], results: List[Dict[str, Any]]) -> None:
+    os.makedirs("reports", exist_ok=True)
+    with open("reports/summary.json", "w", encoding="utf-8") as summary_file:
+        json.dump(summary, summary_file, ensure_ascii=False, indent=2)
+
+    with open("reports/benchmark_results.json", "w", encoding="utf-8") as results_file:
+        json.dump(results, results_file, ensure_ascii=False, indent=2)
+
+
+async def main() -> None:
+    try:
+        v1_summary = await run_benchmark("Agent_V1_Base", "base")
+        v2_results, v2_summary = await run_benchmark_with_results("Agent_V2_Optimized", "optimized")
+    except (FileNotFoundError, ValueError) as error:
+        print(f"Benchmark failed: {error}")
         return
 
-    print("\n📊 --- KẾT QUẢ SO SÁNH (REGRESSION) ---")
+    print("\n=== KET QUA SO SANH (REGRESSION) ===")
     delta = v2_summary["metrics"]["avg_score"] - v1_summary["metrics"]["avg_score"]
     print(f"V1 Score: {v1_summary['metrics']['avg_score']}")
     print(f"V2 Score: {v2_summary['metrics']['avg_score']}")
     print(f"Delta: {'+' if delta >= 0 else ''}{delta:.2f}")
 
-    MIN_SCORE_GAIN = 0.05       
-    MIN_HIT_RATE = 0.8          
-    
-    avg_v1 = v1_summary["metrics"]["avg_score"]
-    avg_v2 = v2_summary["metrics"]["avg_score"]
-    hr_v2 = v2_summary["metrics"]["hit_rate"]
-    # delta đã tính ở trên rồi nên không cần tính lại
-    
-    print("\n⚖️ --- PHÂN TÍCH QUYẾT ĐỊNH (RELEASE GATE) ---")
-    
-    if delta >= MIN_SCORE_GAIN and hr_v2 >= MIN_HIT_RATE:
-        decision = "✅ RELEASE APPROVED"
-        reason = f"Cải thiện {delta:.2f} điểm và Hit Rate đạt chuẩn ({hr_v2:.2%})"
-    elif hr_v2 < MIN_HIT_RATE:
-        decision = "🛑 BLOCK RELEASE"
-        reason = f"Lỗi Retrieval: Hit Rate ({hr_v2:.2%}) thấp hơn ngưỡng cho phép!"
-    else:
-        decision = "🛑 BLOCK RELEASE"
-        reason = f"Cải thiện điểm số ({delta:.2f}) không đáng kể hoặc bị lùi bước."
+    gate_decision = apply_release_gate(v1_summary, v2_summary)
+    v2_summary["gate_decision"] = gate_decision
 
-    print(f"Kết luận: {decision}")
-    print(f"Lý do: {reason}")
-    
-    # Cực kỳ quan trọng: Gán quyết định vào summary trước khi lưu file
-    v2_summary["gate_decision"] = {"status": decision, "reason": reason}
-    # ========================================================
+    print("\n=== PHAN TICH QUYET DINH (RELEASE GATE) ===")
+    print(f"Ket luan: {gate_decision['status']}")
+    print(f"Ly do: {gate_decision['reason']}")
+    print(
+        "Chi phi uoc tinh: "
+        f"{v2_summary['usage_statistics']['estimated_cost_usd']}$ "
+        f"({v2_summary['usage_statistics']['total_tokens']} tokens)"
+    )
 
-    # 2. Tính toán Token & Cost
-    cost_info = calculate_cost(v2_summary["metadata"]["total"])
-    
-    # Đưa thông tin vào summary để nộp bài
-    v2_summary["usage_statistics"] = cost_info
+    persist_reports(v2_summary, v2_results)
+    print(f"\nCompleted. Final decision: {gate_decision['status']}")
 
-    print(f"💰 Chi phí ước tính: {cost_info['estimated_cost_usd']}$ ({cost_info['total_tokens']} tokens)")
-
-    # --- ĐOẠN GHI FILE (VẪN GIỮ NGUYÊN) ---
-    os.makedirs("reports", exist_ok=True)
-    with open("reports/summary.json", "w", encoding="utf-8") as f:
-        # Giờ đây v2_summary đã có thêm trường gate_decision
-        json.dump(v2_summary, f, ensure_ascii=False, indent=2)
-        
-    with open("reports/benchmark_results.json", "w", encoding="utf-8") as f:
-        json.dump(v2_results, f, ensure_ascii=False, indent=2)
-
-    # Thay thế đoạn print cũ bằng decision mới cho chuyên nghiệp
-    print(f"\n🏁 Hoàn tất! Quyết định cuối cùng: {decision}")
 
 if __name__ == "__main__":
     asyncio.run(main())

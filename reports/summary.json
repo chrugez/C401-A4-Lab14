@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "version": "Agent_V2_Optimized",
+    "total": 60,
+    "timestamp": "2026-04-21 16:00:06"
+  },
+  "metrics": {
+    "avg_score": 4.9333,
+    "hit_rate": 1.0,
+    "mrr": 1.0,
+    "agreement_rate": 0.9867,
+    "avg_latency": 0.0606,
+    "pass_rate": 1.0
+  },
+  "usage_statistics": {
+    "total_tokens": 22631,
+    "estimated_cost_usd": 0.2263,
+    "cost_per_case": 0.00377
+  },
+  "gate_decision": {
+    "status": "RELEASE APPROVED",
+    "reason": "Score improved by 0.51 and Hit Rate meets threshold (100.00%)."
+  }
+}

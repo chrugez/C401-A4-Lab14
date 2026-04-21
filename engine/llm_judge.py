@@ -6,7 +6,6 @@ import json
 import os
 from dataclasses import dataclass
 from typing import Any, Dict, List
-
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
@@ -18,8 +17,6 @@ class JudgeProfile:
     model: str
     weight: float = 1.0
     enabled: bool = True
-
-
 class LLMJudge:
     def __init__(
         self,
@@ -38,13 +35,11 @@ class LLMJudge:
             "grounding": "Answer should stay within retrieved context and avoid hallucination.",
             "clarity": "Answer should be concise and professional.",
         }
-
     def _default_profiles(self) -> List[JudgeProfile]:
         return [
             JudgeProfile(name="judge_openai_primary", provider="openai", model="gpt-4o-mini", weight=1.0),
             JudgeProfile(name="judge_openai_secondary", provider="openai", model="gpt-4o", weight=1.0),
         ]
-
     async def evaluate_multi_judge(
         self,
         question: str,
